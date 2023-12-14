@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import firebase from 'firebase/compat/app';
 import { db } from '../firebase/firebase.utils';
-import '../App.css'; // Import your CSS file
+import '../App.css';
 
 const TodoItem = ({ todo, userUid }) => {
     const [editInput, setEditInput] = useState('');
@@ -63,7 +63,6 @@ const TodoItem = ({ todo, userUid }) => {
                     todo.todo
                 )}
             </th>
-            {/* Add the new td for checkboxes */}
             <th className='text-end '>
                 {editingTodoId === todo.id ? null : (
                     <button className='btn btn-success text-end' onClick={() => startEdit(todo)}>

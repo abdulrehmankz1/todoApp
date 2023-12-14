@@ -64,14 +64,9 @@ const Signup = () => {
                         </div>
                         <div className="mb-3">
                             <label className="form-label">Password</label>
-                            {/* <input className="form-control" id="exampleInputPassword1"
-                                type="password"
-                                onChange={event => setValues({ ...values, password: event.target.value })}
-                            /> */}
                             <div className="input-group">
                                 <input className="form-control" id="exampleInputPassword1"
                                     type={showPassword ? 'text' : 'password'}
-                                    // value={values.password}
                                     onChange={event => setValues({ ...values, password: event.target.value })}
                                 />
                                 <button
@@ -96,7 +91,6 @@ const Signup = () => {
                         <div className='mb-2 text-center'>
                             <b>{errorMsg}</b>
                         </div>
-
                         <div className='d-flex justify-content-center align-items-center flex-wrap'>
                             <button type="submit" onClick={handleSubmission}
                                 disabled={submitDisabled}

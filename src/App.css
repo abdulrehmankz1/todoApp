@@ -1,56 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-/* body{
-  font-family: 'Roboto', sans-serif;
-} */
-.roboto{
+.roboto {
   font-family: 'Roboto', sans-serif;
 
 }
+
 .App {
   text-align: center;
-  /* font-family: 'Roboto', sans-serif; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.title{
+.title {
   color: #6c91bd;
   font-size: 40px;
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
   text-align: left;
 }
-.addTodo{
+
+.addTodo {
   background-color: blue !important;
   font-size: 14px;
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
 }
+
 input:focus {
   outline: none;
 }
 
 .card {
   width: 90%;
-  /* padding: 0 20px; */
   margin: 20px;
 }
-input, select, textarea {
+
+input,
+select,
+textarea {
   outline: none !important;
   box-shadow: none !important;
 }
 
-.table-heading{
+.table-heading {
   font-size: 16px;
   font-weight: 600;
   font-family: 'Roboto', sans-serif;
   color: #6c91bd !important;
   text-align: left;
 }
-.data-id{
+
+.data-id {
   font-size: 16px;
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
@@ -59,52 +61,60 @@ input, select, textarea {
   padding-top: 15px !important;
 }
 
-@media (min-width: 100px ) and (max-width: 992px ) {
+@media (min-width: 100px) and (max-width: 992px) {
   .card {
     width: 90%;
     padding: 2px;
-  margin: 2px;
+    margin: 2px;
   }
+
   thead {
     max-width: 100px;
-   
+
   }
-  tr{
+
+  tr {
     width: 90% !important;
     background-color: blue !important;
   }
 
 }
-.forgot-pass{
+
+.forgot-pass {
   font-size: 15px;
   color: blueviolet;
   font-weight: 600;
   background-color: transparent;
   border: none;
 }
-.forgot-pass:hover{
-  text-decoration:underline;
+
+.forgot-pass:hover {
+  text-decoration: underline;
 }
 
-@media (min-width: 100px ) and (max-width: 767px) {
-  .login-btn{
+@media (min-width: 100px) and (max-width: 767px) {
+  .login-btn {
     width: 80px !important;
     margin-top: 10px;
   }
+
   .card {
     width: 90% !important;
     padding: 10px I !important;
     margin: 10px !important;
     overflow-x: scroll !important;
   }
-  .login-container{
-    width:90% !important;
+
+  .login-container {
+    width: 90% !important;
   }
 }
+
 .completed {
   text-decoration: line-through !important;
 }
-.form-check-input{
+
+.form-check-input {
   margin: 13px 0 0;
   cursor: pointer;
   border-radius: 50px !important;

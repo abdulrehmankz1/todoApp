@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import TodoApp from './TodoApp';
-// import { Link } from 'react-router-dom/cjs/react-router-dom';
-
 import { getAuth, onAuthStateChanged, signOut } from 'firebase/auth';
-// import { Link } from 'react-router-dom';
 import Login from './Login'
 
 function Home() {
@@ -28,7 +25,7 @@ function Home() {
         signOut(auth).then(() => {
             console.log('Sign - out successful.')
             // Sign - out successful.
-            // window.location.href = '/login';
+            window.location.href = '/login';
         }).catch((error) => {
             // Handle sign-out error.
             console.error(error);

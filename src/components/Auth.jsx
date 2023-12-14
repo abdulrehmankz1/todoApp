@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { signInWithEmailAndPassword, signOut } from 'firebase/auth';
-// import { auth } from './firebase';
 import { auth } from '../firebase/firebase.utils';
 
 const Auth = () => {
