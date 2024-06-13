@@ -142,11 +142,13 @@ const Login = () => {
                             <p className='mt-3 ms-3'>
                                 Not a member? <a href='/signup'>SignUp</a>
                             </p>
-                            <button
+                        </div>
+                        <div className='d-flex align-items-center flex-column w-100'>
+                        <button
                                 type='button'
                                 id='facebook-login'
                                 name='facebook-login'
-                                className='btn btn-primary w-75 login-btn'
+                                className='btn btn-primary w-75 '
                                 onClick={handleFacebookLogin}
                             >
                                 Login with Facebook
@@ -155,7 +157,7 @@ const Login = () => {
                                 type='button'
                                 id='google-login'
                                 name='google-login'
-                                className='btn btn-primary w-75 login-btn mt-1'
+                                className='btn btn-primary w-75  mt-1'
                                 onClick={signInWithGoogle}
                             >
                                 Login with Google
